@@ -10,7 +10,7 @@ data=data.drop('rank',axis=1)
 
 #standardise extra large and extra small features in gre and gpa
 for field in ['gre','gpa']:
-    mean,std=data[field].mean,data[field].std
+    mean,std=data[field].mean(),data[field].std()
     data.loc[:,field]=(data[field]-mean)/std
 
 #split training and testing
