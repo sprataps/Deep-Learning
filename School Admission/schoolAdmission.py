@@ -10,7 +10,7 @@ weights=np.random.normal(scale=1/n_features**.5, size=n_features)
 
 #hyper-parameters
 iteration=1000
-learning_rate=0.5
+learning_rate=0.001
 
 for i in range(iteration):
     delta_weight=np.zeros(n_features)
